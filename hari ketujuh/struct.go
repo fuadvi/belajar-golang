@@ -7,11 +7,17 @@ type Orang struct {
 	Age           int
 }
 
+func (costumer Orang) sayHello(nama string) {
+	fmt.Println("haloo", nama, "from", costumer.Name)
+}
+
 func main() {
 	var fuad Orang
 	fuad.Name = "teuku Fuad maulana"
 	fuad.Address = "Lhokseumawe"
 	fuad.Age = 30
+
+	fuad.sayHello("joe")
 
 	fmt.Println(fuad.Name)
 	fmt.Println(fuad.Address)
